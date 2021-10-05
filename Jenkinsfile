@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage("Checkout code") {
             steps {
-                welcome.checkoutCodeNPM()
+                script {
+                    welcome.checkoutCodeNPM()
+                }
             }
         }
         stage("Build image") {
