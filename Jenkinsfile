@@ -9,7 +9,7 @@ pipeline {
         stage("Checkout code") {
             steps {
                 script {
-                    welcome.checkoutCodeNPM()
+                    welcome.checkoutCodeNpm()
                 }
             }
         }
